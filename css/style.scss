@@ -8,19 +8,71 @@ body {
 	font-family: Roboto;
 	display: flex;
 	justify-content: center;
-	background-color: #9c8f8f
+	background-color: #282f31;
 }
 
 .main-app{
-	width: 1180px;
 	height: 100vh;
 	display: flex;
 }
 
-.recipe-select {
+.results{
 	background-color: #fff;
-	flex: 1;
-}
+	flex: 1;}
+  .results-list {
+    list-style: none; 
+  }
+  .results-list li {
+  }
+  .results-link:link, .results-link:visited{
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    border-right: 1px solid #fff;
+    text-decoration: none; 
+  }
+  .results-link:hover{
+    background-color: #F9F5F3;
+  }
+  .results-link-active{
+    background-color: #F9F5F3; 
+  }
+  .results-fig {
+    flex: 0 0 5.5rem;
+    margin: 10px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 5.5rem;
+    position: relative;
+    backface-visibility: hidden; 
+  }
+    .results-fig img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .3s;
+       }
+  .results-name {
+    font-size: 1rem;
+    color: #F59A83;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .3rem; 
+  }
+  .results-author{
+    font-size: .8rem;
+    color: #968B87;
+    text-transform: uppercase;
+    font-weight: 600; 
+  }
+  
+
+
+
+
+
+
 
 
 .recipe-show {
@@ -45,12 +97,16 @@ body {
 		}
 			input:focus {
 				border-color: transparent !important; 
+				border: none;
 			}
 			input::placeholder {
 				color: yellow;
 				font-size: 1.5rem; }
 
-	
+
+	.recipe-details {
+		height: 70vh;
+	}	
 		.recipe-section-img {
 			height: 20rem;
     	position: relative;
@@ -128,11 +184,8 @@ body {
 
 
 		.recipe-footer {
-			position: absolute;
-			bottom: 0;
-			width: 885px;
 			background-color: #344044;
-			height: 6vh;
+			height: 5vh;
 			display: flex;
 			align-items: center;
 		} .visit-site {
@@ -155,10 +208,5 @@ body {
 			color: #fff;
 			margin-right: 10px;
 		} 
-
-
-
-
-
 
 }
